@@ -1,12 +1,12 @@
 import Navbar from "./components/Navbar"
-import Main from "./components/Main"
+import ItemListContainer from "./components/ItemListContainer";
 import Footer from "./components/Footer"
 
 export default function App() {
   return (
     <>
         <Navbar />
-        <Main/>
+        <ItemListContainer greeting="Bienvenido!"/>
         <Footer/>
     </>
   )

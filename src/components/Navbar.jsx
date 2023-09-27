@@ -2,9 +2,9 @@ import { Container } from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import CartWidget from './CartWidget';
 
 export default function NavBar() {
-    // No existe un 
     return (
         <header>
             <Navbar>
@@ -22,6 +22,7 @@ export default function NavBar() {
                             </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>
+                    <CartWidget/>
                 </Container>
             </Navbar>
         </header>
