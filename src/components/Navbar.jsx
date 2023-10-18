@@ -1,25 +1,23 @@
 import { Container } from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from './CartWidget';
+import { NavLink } from 'react-router-dom';
 
 export default function NavBar() {
     return (
         <header>
             <Navbar>
                 <Container fluid>
-                    <Navbar.Brand href="#principal">RhemberAO Shop</Navbar.Brand>
+                    <Navbar.Brand href="/">Shop</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="#principal">Principal</Nav.Link>
-                            <Nav.Link href="#creditos">Créditos</Nav.Link>
-                            <NavDropdown title="Objetos" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#objetos/combate">Combate</NavDropdown.Item>
-                                <NavDropdown.Item href="#objetos/exploracion">Exploración</NavDropdown.Item>
-                                <NavDropdown.Item href="#objetos/utilidad">Utilidad</NavDropdown.Item>
-                            </NavDropdown>
+                            <NavLink className={'nav-link'} to={'/'}>Principal</NavLink>
+                            <NavLink className={'nav-link'} to={'/category/mens-clothing'}>Ropa Hombre</NavLink>
+                            <NavLink className={'nav-link'} to={'/category/womens-clothing'}>Ropa Mujer</NavLink>
+                            <NavLink className={'nav-link'} to={'/category/jewelery'}>Joyería</NavLink>
+                            <NavLink className={'nav-link'} to={'/category/electronics'}>Electrónica</NavLink>
                         </Nav>
                     </Navbar.Collapse>
                     <CartWidget/>
