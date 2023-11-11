@@ -202,7 +202,7 @@ const products = [
 ]
 
 
-export const getProducts = () => {
+export const getProducts = async () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(products)
