@@ -5,12 +5,12 @@ Para ejecutar la página, necesitas [Node.js](https://nodejs.org/en/) y [Git](ht
 
 1. Clonar el repositorio
 ```bash
-git clone 
+git clone https://github.com/Lucascecco/techno-shop
 ```
 
 2. Navegar al directorio del repositorio
 ```bash
-cd 
+cd techno-shop
 ```
 
 3. Instalar las dependencias
@@ -23,7 +23,10 @@ npm install
 npm run dev
 ```
 
-5. Abrir [http://localhost:3000](http://localhost:3000) en el navegador para visualizar la página.
+5. Abrir [http://localhost:5173](http://localhost:5173) en el navegador para visualizar la página.
+
+## Funcionamiento
+El funcionamiento de la página puede visualizarse en [este video](https://www.youtube.com/watch?v=36arWW_znnk).
 
 ## Dependencias
 - React 18.2.0
